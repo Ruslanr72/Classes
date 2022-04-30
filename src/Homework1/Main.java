@@ -12,12 +12,12 @@ public class Main {
 
         System.out.println("\n====================");
 
-        Authors secondWorkbook = new Authors("Second Workbook", 2001);
-        Authors authorOfSecondWorkbook = new Authors("Elvira");
+        Book secondWorkbook = new  Book("Second Workbook", 2001);
+        Author authorOfSecondWorkbook = new Author("Elvira");
         System.out.println("Homework1.Book name is - " + secondWorkbook.getSecondBookName() + ".");
         System.out.println("Homework1.Author name is - " + authorOfSecondWorkbook.getSecondAuthorName() + ".");
         System.out.println("The book year is - " + secondWorkbook.getSecondBookYear() + ".");
-        secondWorkbook.setSecondBookYear(2020);
+        secondWorkbook.setBookYear(2020);
         System.out.println("Set year of book is -  " + secondWorkbook.getSecondBookYear());
     }
     }
