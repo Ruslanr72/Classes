@@ -1,19 +1,28 @@
 package Homework1;
 
+import java.util.Objects;
+
 public class Author {
-    private String secondAuthorName;
-  private   String authorName;
 
-
+  private final String authorName;
     public Author(String nameAuthor) {
-        this.authorName = nameAuthor; this.secondAuthorName = nameAuthor;
+        this.authorName = nameAuthor;
     }
-
-    public String getAuthorName () {
-        return this.authorName;
+    @Override
+        public boolean equals(Object other) {
+            if (this.getClass() != other.getClass()) {
+                return false;
+            }
+            Author author = (Author) other;
+            return authorName.equals(author.authorName);
+        }
+        @Override
+        public int hashCode() {
+            return Objects.hash(authorName);
+        }
+        @Override
+        public String toString() {
+            return "Author name is - " + this.authorName + ".";
+        }
     }
-    public String getSecondAuthorName() {
-        return this.secondAuthorName;
-    }
-}
 
