@@ -3,23 +3,15 @@ package Homework1;
 import java.util.Objects;
 
 public class Book {
-
-    private int secondBookYear;
-    private String secondBookName;
    private String bookName;
   private   int bookYear;
 
     public Book (String bookName, int bookYear) {
         this.bookName = bookName;
         this.bookYear = bookYear;
-        this.secondBookName = bookName;
-        this.secondBookYear = bookYear;
     }
     public int getBookYear(){
         return this.bookYear;
-    }
-    public int getSecondBookYear() {
-        return this.secondBookYear;
     }
 public void setBookYear(int bookYear){
         this.bookYear = bookYear;
@@ -38,6 +30,6 @@ public void setBookYear(int bookYear){
     }
     @Override
     public String toString() {
-        return "Book name is -  " + bookName + ". " + "\nThe book year is - " + bookYear + ".";
+        return "Book name is -  " + bookName + ". " + "\nThe book year is - " + bookYear + "." + "\nAuthor name is - ";
     }
 }

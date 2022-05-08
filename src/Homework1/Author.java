@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Author {
 
-  private final String authorName;
+  public  String authorName;
     public Author(String nameAuthor) {
         this.authorName = nameAuthor;
     }

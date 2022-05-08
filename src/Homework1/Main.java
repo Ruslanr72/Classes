@@ -16,6 +16,6 @@ public class Main {
         System.out.println(secondWorkbook);
         System.out.println(authorOfSecondWorkbook);
         secondWorkbook.setBookYear(2020);
-        System.out.println("Set year of book is -  " + secondWorkbook.getSecondBookYear());
+        System.out.println("Set year of book is -  " + secondWorkbook.getBookYear());
     }
     }
